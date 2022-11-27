@@ -14,6 +14,11 @@ import { ConfirmationModalComponent } from './components/confirmation-modal/conf
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    HeaderComponent,
+    DeleteModalComponent,
+    ConfirmationModalComponent
   ]
 })
 export class SharedModule { }
