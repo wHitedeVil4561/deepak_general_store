@@ -1,0 +1,21 @@
+<div class="main">
+    <div class="wrapper">
+        <div class="header">
+            Filters
+        </div>
+        <div class="filter-items">
+            <div class="filter-item" *ngFor="let filteroption of filteroptions">
+                <label for="Village">{{filteroption.label}}</label>
+                <ng-select
+                *ngIf="filteroption.type == 'select'"
+                placeholder="Select"
+                [items]="filteroption.options"
+                bindLabel="name"
+                bindValue="id"
+                >
+                </ng-select>
+                <input type="text" *ngIf="filteroption.type=='input'">
+            </div>
+        </div>
+    </div>
+</div>
