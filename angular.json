@@ -78,12 +78,16 @@
               "browserTarget": "Grocery:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 5500
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "Grocery:build"
+            
           }
         },
         "test": {
