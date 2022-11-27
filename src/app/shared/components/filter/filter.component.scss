@@ -1,0 +1,39 @@
+.main{
+    height: 100%;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+    background: #FF9933;
+    .wrapper{
+        width: 80%;
+        .header{
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+        }
+        .filter-items{
+            .filter-item{
+                label{
+                    font-size: 16px;
+                    font-weight: 500px;
+                    color: #fff;
+                }
+                ng-select{
+                    font-size: 16px;
+                    &::placeholder{
+                        color: #707070;
+                    }
+                }
+                input{
+                    &::placeholder{
+                        color: #707070;
+                    }
+                }
+            }
+        }
+    }
+}
+::ng-deep{
+
+}

@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
 import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { FilterComponent } from './components/filter/filter.component';
     ConfirmationModalComponent,
     FilterComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule,NgSelectModule],
   exports: [
     HeaderComponent,
     DeleteModalComponent,
