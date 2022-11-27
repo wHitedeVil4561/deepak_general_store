@@ -1,0 +1,64 @@
+.main {
+    display: flex;
+    padding: 20px 3vw;
+    font-family: 'Roboto';
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+
+    .logo {
+        color: #FF9933;
+        font-weight: 600;
+        font-size: 32px;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 30px;
+
+        .tab-item {
+            font-size: 24px;
+            font-weight: 500;
+            color: #707070;
+        }
+    }
+
+    
+
+    .icons {
+        .loginbtn {
+            button {
+                border: none;
+                padding: 10px 25px;
+                font-size: 26px;
+                background: #2C72EE;
+                color: #fff;
+                font-weight: 600;
+                border-radius: 10px;
+            }
+        }
+        display: flex;
+        gap: 30px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+@media (max-width:1200px){
+    .logo{
+        font-size: 26px !important;
+
+    }
+    .tab-item, button{
+        font-size: 16px !important;
+    }
+    .icons{
+        img{
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+}
