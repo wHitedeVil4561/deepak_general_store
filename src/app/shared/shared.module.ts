@@ -3,22 +3,21 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
 import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
-
-
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     DeleteModalComponent,
-    ConfirmationModalComponent
+    ConfirmationModalComponent,
+    FilterComponent,
   ],
-  imports: [
-    CommonModule
-  ],
-  exports:[
+  imports: [CommonModule],
+  exports: [
     HeaderComponent,
     DeleteModalComponent,
-    ConfirmationModalComponent
-  ]
+    ConfirmationModalComponent,
+    FilterComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
